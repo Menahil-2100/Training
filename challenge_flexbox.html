@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product — Converse Chuck Taylor</title>
+    <!-- <link rel="stylesheet" href="style_flexbox.css" /> -->
+  </head>
+  <body>
+    <div id="main"></div>
+      <article class="product">
+        <p class="sale">Sale</p>
+        <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
+        
+        <div class="container"> 
+            <div class="c3">  
+                <img src="https://i.ibb.co/Jr7Wh1d/challenges.jpg" alt="Chuck Taylor All Star Shoe" height="250" width="250" />
+            </div>
+            
+            <div class="c1">            
+                <div class="pp">
+                    <p class="price"><strong>$65.00</strong></p>
+                    <p class="shipping">Free shipping</p>
+                </div>
+                
+                <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe staple.</p>
+                
+                <a class="more-info" href="https://www.converse.com">More information →</a>
+                
+                <br><br>
+                
+                <div class="pc">
+                    <div class="color blue"></div>
+                    <div class="color red"></div>
+                    <div class="color green"></div>
+                </div>
+            </div>
+
+            <div class="c2">
+                <h3 id="pd">Product details</h3>
+                <ul class="details-list">
+                    <li>Lightweight, durable canvas sneaker</li>
+                    <li>Lightly padded footbed for added comfort</li>
+                    <li>Iconic Chuck Taylor ankle patch</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <button class="add-cart">Add to cart</button>
+      </article>
+    </div>
+    <footer class="site-footer">
+      <div class="copyright">© 2026 Shop — All rights reserved</div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .product-title{
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+}
+article{
+    border: 5px solid black;
+}
+.more-info:link, .more-info:visited{
+    color: black;
+}
+.more-info:hover, .more-info:active{
+    text-decoration: none;
+}
+.price{
+    font-size: 25px;
+}
+.shipping{
+    color: gray;
+    font-size: 14px;
+}
+.add-cart{
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 15px;
+}
+.add-cart:hover{
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+}
+#main{
+    margin: 50px auto;
+    width: 300px;
+}
+.sale{
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    width: fit-content;
+    position: relative;
+    top: -40px;
+    left: 10px;
+}
+.color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.pc{
+    display: flex;
+    gap:10px;
+}
+.details-list{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.pp{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+    align-items: center;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
+.c1{
+    flex: 1;
+    justify-content: center;
+}
+.c2{
+    flex: 1;
+    margin-top:10px;
+}
+.c3{
+    flex: 1;
+    margin-left: 10px;
+}
+</style>
